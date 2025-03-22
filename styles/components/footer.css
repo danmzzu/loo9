@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 200px;
+    padding: 70px 0;
+    margin: 0 auto;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 8px;
+    width: 100%;
+}
+
+footer section span {
+    text-align: right;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    footer { flex-direction: column; }
+    footer section:nth-child(1) { justify-content: center; }
+    footer section span { text-align: center !important; }
+}
