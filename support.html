@@ -43,20 +43,16 @@
 
         <!-- Components Styles -->
         <link rel="stylesheet" href="styles/components/header.css">
-        <link rel="stylesheet" href="styles/components/footer.css">
         <link rel="stylesheet" href="styles/components/infinite.css">
-        <link rel="stylesheet" href="styles/components/card.css">
+        <link rel="stylesheet" href="styles/components/footer.css">
 
         <!-- Global Scripts -->
         <script defer src="scripts/global/protect.js"></script>
-
-        <!-- Components Scripts -->
-        <script defer src="scripts/components/header.js"></script>
     </head>
     <body class="protect">
 
         <!-- Header -->
-        <header class="container flex-column fgap-30 align-center justify-center">
+        <header class="container header-small flex-column fgap-30 align-center justify-center">
             <div class="words-container">
                 <div class="words">L</div>
                 <div class="infinite-circles-container">
@@ -109,63 +105,21 @@
                 </div>
                 <div class="words">9</div>
             </div>
-            <p class="fs-20 fw-400 lh-1-6 mt-15 secondary-color italic">"Mais tempo, mais vida."</p>
-            <div class="arrow">
-                <i class="bi bi-arrow-down-circle-fill"></i>
-            </div>
         </header>
 
         <!-- Main -->
-        <main class="container my-100 flex-column fgap-30">
-            <section class="grid grid-3 ggap-15">
-                <div class="card">
-                    <div class="card-container">
-                        <h1 class="fs-25 fw-900 ls-1 uppercase theme-color">Chatbots Inteligentes</h1>
-                        <p class="fs-15 fw-300 lh-1-6 primary-color">Impulsione seu atendimento com chatbots inteligentes. Disponíveis 24/7, eles oferecem respostas rápidas, otimizam vendas e agendam serviços, tudo de forma automática.</p>
-                        <div class="card-gap"></div>
-                        <a class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;" href="https://wa.me/5516993530533" target="_blank">Solicitar orçamento</a>
+        <main class="container mt-20 mb-100">
+            <section class="flex-column fgap-15">
+                <h1 class="fs-25 fw-900 ls-1 lh-1-4 uppercase theme-color">Suporte</h1>
+                <p class="fs-15 fw-300 lh-1-6 primary-color">Abrir um novo ticket de suporte permite que nossa equipe resolva suas dúvidas e problemas de forma rápida e eficiente. Preencha os campos abaixo com as informações necessárias e envie sua solicitação. Nossa equipe responderá o mais breve possível.</p>
+                <form class="flex-column fgap-15">
+                    <div class="grid grid-2 ggap-15">
+                        <input class="fs-15 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color" type="text" placeholder="Código empresa" maxlength="4">
+                        <input class="fs-15 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color" type="text" placeholder="Assunto" maxlength="150">
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-container">
-                        <h1 class="fs-25 fw-900 ls-1 lh-1-4 uppercase theme-color">Automação de Processos Robóticos</h1>
-                        <p class="fs-15 fw-300 lh-1-6 primary-color">Otimize suas operações com RPA. Automatize tarefas repetitivas, minimize erros, aumente a produtividade e integre sistemas para um fluxo de trabalho eficiente.</p>
-                        <div class="card-gap"></div>
-                        <a class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;" href="https://wa.me/5516993530533" target="_blank">Solicitar orçamento</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-container">
-                        <h1 class="fs-25 fw-900 ls-1 lh-1-4 uppercase theme-color">Desenvolvimento de APIs Personalizadas</h1>
-                        <p class="fs-15 fw-300 lh-1-6 primary-color">Conecte seus sistemas e expanda funcionalidades com APIs personalizadas. Compartilhe dados com segurança e crie soluções escaláveis para o seu negócio.</p>
-                        <div class="card-gap"></div>
-                        <a class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;" href="https://wa.me/5516993530533" target="_blank">Solicitar orçamento</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-container">
-                        <h1 class="fs-25 fw-900 ls-1 lh-1-4 uppercase theme-color">Automação de Marketing</h1>
-                        <p class="fs-15 fw-300 lh-1-6 primary-color">Maximize o impacto das suas campanhas com automação de marketing. Gere leads qualificados, personalize mensagens e analise dados para otimizar resultados.</p>
-                        <div class="card-gap"></div>
-                        <a class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;" href="https://wa.me/5516993530533" target="_blank">Solicitar orçamento</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-container">
-                        <h1 class="fs-25 fw-900 ls-1 lh-1-4 uppercase theme-color">Automação de Atendimento ao Cliente</h1>
-                        <p class="fs-15 fw-300 lh-1-6 primary-color">Transforme seu atendimento com um sistema de tickets automatizado. Respostas rápidas, roteamento inteligente de chamados e suporte eficiente para seus clientes.</p>
-                        <div class="card-gap"></div>
-                        <a class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;" href="https://wa.me/5516993530533" target="_blank">Solicitar orçamento</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-container">
-                        <h1 class="fs-25 fw-900 ls-1 lh-1-4 uppercase theme-color">Automação de Relatórios e Análises</h1>
-                        <p class="fs-15 fw-300 lh-1-6 primary-color">Tome decisões estratégicas com base em dados precisos. Crie painéis personalizados, receba relatórios automáticos e analise informações em tempo real.</p>
-                        <div class="card-gap"></div>
-                        <a class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;" href="https://wa.me/5516993530533" target="_blank">Solicitar orçamento</a>
-                    </div>
-                </div>
+                    <textarea class="fs-15 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color" style="resize: vertical; height: 150px; max-height: 300px;" placeholder="Mensagem"></textarea>
+                    <button class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;">Enviar</button>
+                </form>
             </section>
         </main>
 
@@ -183,6 +137,5 @@
                 <p class="fs-12 fw-300 lh-1-8 text-right tertiary-color" style="width: 100%;">Elaborado e desenvolvido por Daniel Mazzeu.<br>Todos os direitos reservados 2025.</p>
             </section>
         </footer>
-        
     </body>
 </html>

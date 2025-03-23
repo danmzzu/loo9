@@ -1,3 +1,26 @@
+/* Margens */
+.m-5 { margin: 5px; }
+.m-10 { margin: 10px; }
+.m-15 { margin: 15px; }
+.m-20 { margin: 20px; }
+.m-25 { margin: 25px; }
+.m-30 { margin: 30px; }
+.m-35 { margin: 35px; }
+.m-40 { margin: 40px; }
+.m-45 { margin: 45px; }
+.m-50 { margin: 50px; }
+.m-55 { margin: 55px; }
+.m-60 { margin: 60px; }
+.m-65 { margin: 65px; }
+.m-70 { margin: 70px; }
+.m-75 { margin: 75px; }
+.m-80 { margin: 80px; }
+.m-85 { margin: 85px; }
+.m-90 { margin: 90px; }
+.m-95 { margin: 95px; }
+.m-100 { margin: 100px; }
+.m-auto { margin: auto; }
+
 /* Margens superiores */
 .mt-5 { margin-top: 5px; }
 .mt-10 { margin-top: 10px; }

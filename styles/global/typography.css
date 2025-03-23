@@ -51,9 +51,6 @@
 .capitalize { text-transform: capitalize; }
 
 /* Espaçamento entre Letras */
-.ls--2 { letter-spacing: -2px; }
-.ls--1 { letter-spacing: -1px; }
-.ls-0 { letter-spacing: 0px; }
 .ls-1 { letter-spacing: 1px; }
 .ls-2 { letter-spacing: 2px; }
 .ls-3 { letter-spacing: 3px; }
