@@ -6,12 +6,14 @@ header {
 
 header .words-container {
     display: flex;
+    align-self: center;
+    justify-content: center;
     flex-wrap: nowrap !important;
-    gap: 20px;
+    gap: 25px;
     transition: none;
 }
 
-header .words {
+header .words-container .words {
     font-size: 10em;
     font-weight: 600;
     color: var(--theme);
@@ -36,7 +38,12 @@ header .arrow i {
     50% { transform: translateY(30px); }
 }
 
-@media all and (max-height: 768px) {
-    header .arrow { display: none; }
+@media all and (max-width: 768px) {
+    header .words-container { gap: 15px; }
+    header .words-container .words { font-size: 7.5em; }
     header .arrow i { font-size: 2.5em; }
+}
+
+@media all and (max-height: 500px) {
+    header .arrow { display: none; }
 }

@@ -54,10 +54,7 @@
 }
 
 @media all and (max-width: 768px) {
-    .infinite-words-container { gap: 15px; }
     .infinite-circles-container .infinite-circles { width: 80px; }
-    .infinite-words { font-size: 7em; }
-    .infinite-description { font-size: 1.4em; }
 
     @keyframes infinimate {
         0% { transform: scale(0.7); }
