@@ -1,7 +1,6 @@
 /* Display */
 .flex-row,
 .flex-column {
-    width: 100%;
     display: flex;
 }
 

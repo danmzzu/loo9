@@ -30,7 +30,6 @@
         <link rel="stylesheet" href="styles/global/global.css">
         <link rel="stylesheet" href="styles/global/colors.css">
         <link rel="stylesheet" href="styles/global/scrollbar.css">
-        <link rel="stylesheet" href="styles/global/container.css">
         <link rel="stylesheet" href="styles/global/margin.css">
         <link rel="stylesheet" href="styles/global/padding.css">
         <link rel="stylesheet" href="styles/global/typography.css">
@@ -40,6 +39,7 @@
         <link rel="stylesheet" href="styles/global/protect.css">
         <link rel="stylesheet" href="styles/global/flex.css">
         <link rel="stylesheet" href="styles/global/grid.css">
+        <link rel="stylesheet" href="styles/global/sizes.css">
 
         <!-- Components Styles -->
         <link rel="stylesheet" href="styles/components/header.css">
@@ -52,7 +52,7 @@
     <body class="protect">
 
         <!-- Header -->
-        <header class="container header-small flex-column fgap-30 align-center justify-center">
+        <header class="header-small flex-column fgap-30 align-center justify-center mx-auto w-100 max-width">
             <div class="words-container">
                 <div class="words">L</div>
                 <div class="infinite-circles-container">
@@ -108,32 +108,32 @@
         </header>
 
         <!-- Main -->
-        <main class="container mt-20 mb-100">
-            <section class="flex-column fgap-15">
-                <h1 class="fs-25 fw-900 ls-1 lh-1-4 uppercase theme-color">Suporte</h1>
-                <p class="fs-15 fw-300 lh-1-6 primary-color">Abrir um novo ticket de suporte permite que nossa equipe resolva suas dúvidas e problemas de forma rápida e eficiente. Preencha os campos abaixo com as informações necessárias e envie sua solicitação. Nossa equipe responderá o mais breve possível.</p>
+        <main class="mt-20 mb-100 mx-auto w-100 max-width">
+            <section class="flex-column fgap-15 w-100">
+                <h1 class="fs-20 fw-900 ls-1 lh-1-4 uppercase theme-color">Suporte</h1>
+                <p class="fs-13 fw-300 lh-1-6 primary-color">Abrir um novo ticket de suporte permite que nossa equipe resolva suas dúvidas e problemas de forma rápida e eficiente. Preencha os campos abaixo com as informações necessárias e envie sua solicitação. Nossa equipe responderá o mais breve possível.</p>
                 <form class="flex-column fgap-15">
                     <div class="grid grid-2 ggap-15">
-                        <input class="fs-15 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color" type="text" placeholder="Código empresa" maxlength="4">
-                        <input class="fs-15 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color" type="text" placeholder="Assunto" maxlength="150">
+                        <input class="fs-13 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color w-100" type="text" placeholder="Código empresa" maxlength="4">
+                        <input class="fs-13 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color w-100" type="text" placeholder="Assunto" maxlength="150">
                     </div>
-                    <textarea class="fs-15 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color" style="resize: vertical; height: 150px; max-height: 300px;" placeholder="Mensagem"></textarea>
-                    <button class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-15 fw-500" style="width: fit-content;">Enviar</button>
+                    <textarea class="fs-13 p-15 field-color field-bg-color field-hover-bg-color b-1 b-solid b-radius-5 b-color" style="resize: vertical; height: 150px; max-height: 300px;" placeholder="Mensagem"></textarea>
+                    <button class="b-0 b-radius-5 p-15 button-color button-hover-color button-bg-color button-hover-bg-color fs-13 fw-500 w-fit" style="width: fit-content;">Enviar</button>
                 </form>
             </section>
         </main>
 
         <!-- Footer -->
-        <footer class="container flex-row fgap-40 align-start justify-between mb-70">
-            <section class="flex-row fgap-20 flex-wrap">
-                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-15 fw-400 lh-1-6" href="/">Início</a>
-                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-15 fw-400 lh-1-6" href="about.html">Sobre</a>
-                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-15 fw-400 lh-1-6" href="contact.html">Contato</a>
-                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-15 fw-400 lh-1-6" href="support.html">Suporte</a>
-                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-15 fw-400 lh-1-6" href="terms.html">Termos de uso</a>
-                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-15 fw-400 lh-1-6" href="policy.html">Políticas de privacidade</a>
+        <footer class="flex-row fgap-40 align-start justify-between mb-70 mx-auto w-100 max-width">
+            <section class="flex-row fgap-20 flex-wrap w-100">
+                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-13 fw-400 lh-1-6" href="/">Início</a>
+                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-13 fw-400 lh-1-6" href="about.html">Sobre</a>
+                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-13 fw-400 lh-1-6" href="contact.html">Contato</a>
+                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-13 fw-400 lh-1-6" href="support.html">Suporte</a>
+                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-13 fw-400 lh-1-6" href="terms.html">Termos de uso</a>
+                <a class="a-default a-active a-hover a-visited a-fancy a-no-underline fs-13 fw-400 lh-1-6" href="policy.html">Políticas de privacidade</a>
             </section>
-            <section class="flex-column">
+            <section class="flex-column w-100">
                 <p class="fs-12 fw-300 lh-1-8 text-right tertiary-color" style="width: 100%;">Elaborado e desenvolvido por Daniel Mazzeu.<br>Todos os direitos reservados 2025.</p>
             </section>
         </footer>
