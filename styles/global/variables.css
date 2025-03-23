@@ -1,5 +1,13 @@
 :root {
-    --primary: #fff;
-    --secondary: #ddd;
+    --theme: #fff;
+    --theme-hover: #fff;
+
+    --primary: #ddd;
+    --primary-hover: #ddd;
+
+    --secondary: #999;
+    --secondary-hover: #fff;
+
     --tertiary: #666;
+    --tertiary-hover: #666;
 }

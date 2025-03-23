@@ -25,13 +25,14 @@
         rgba(0, 0, 0, 0) 100%
     );
     transform: translate(0);
-    animation: rotateBorder 3s linear infinite;
+    animation: rotateBorder 2s linear infinite;
     transform-origin: top center;
     opacity: 1;
 }
 
 .card:nth-child(odd)::before {
     animation-direction: reverse;
+    animation-duration: 3s;
 }
 
 .card-container {
