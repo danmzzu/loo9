@@ -11,10 +11,10 @@
     --tertiary: #666;
     --tertiary-hover: #666;
 
-    --button: #fff;
-    --button-hover: #000;
-    --button-bg: #222;
-    --button-bg-hover: #fff;
+    --button: #000;
+    --button-hover: #fff;
+    --button-bg: #000;
+    --button-bg-hover: #f9f9f9;
 
     --field: #fff;
     --field-bg: #000;
