@@ -11,9 +11,9 @@
     --tertiary: #666;
     --tertiary-hover: #666;
 
-    --button: #000;
-    --button-hover: #fff;
-    --button-bg: #000;
+    --button: #fff;
+    --button-hover: #000;
+    --button-bg: #fff;
     --button-bg-hover: #f9f9f9;
 
     --field: #fff;
