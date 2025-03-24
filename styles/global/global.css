@@ -45,7 +45,7 @@ button:disabled,
 input:disabled,
 select:disabled,
 textarea:disabled {
-    color: #666 !important;
-    background-color: #333 !important;
+    color: #555 !important;
+    background-color: #151515 !important;
     cursor: default !important;
 }
