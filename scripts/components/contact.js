@@ -1,59 +1,55 @@
 const form = document.getElementById("contact-form");
 const subjectField = document.getElementById("contact-subject");
 const messageField = document.getElementById("contact-message");
-const feedbackElement = document.getElementById("feedback"); // Um elemento para exibir feedback para o usuário.
+const feedbackElement = document.getElementById("feedback");
 
 form.addEventListener("submit", async function(event) {
     event.preventDefault();
-    
-    // Limpar mensagens anteriores
-    feedbackElement.textContent = "";
-    
-    // Verificar se os campos estão preenchidos
-    if (subjectField.value.trim() === "" || messageField.value.trim() === "") {
-        feedbackElement.textContent = "Falha: Todos os campos devem ser preenchidos.";
-        feedbackElement.style.color = "red";
-        return;
-    }
-    
-    // Dados para envio, use variáveis de ambiente para as credenciais em produção
-    const data = {
-        apikey: process.env.API_KEY, // Exemplo usando variável de ambiente
-        port: 587,
-        ssl: false,
-        smtp: "smtp.gmail.com",
-        email: "danmzzu@gmail.com",
-        password: process.env.SMTP_PASSWORD, // Exemplo usando variável de ambiente
-        from: '"LOO9 - Contato" <danmzzu@gmail.com>',
-        to: "danmzzu@gmail.com",
-        subject: subjectField.value,
-        message: messageField.value
-    };
 
-    // Enviar email
-    try {
-        const response = await fetch("https://sendmail-production-286f.up.railway.app/", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
+    const subject = subjectField.value.trim();
+    const message = messageField.value.trim();
 
-        const result = await response.json();
+    if (!subject || !message) {
+        console.log("Falha: Todos os campos devem ser preenchidos.");
+        displayFeedback("Todos os campos devem ser preenchidos.", "error");
+    } else {
+        try {
+            const response = await fetch("https://sendmail-production-286f.up.railway.app/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    apikey: "352c42aac430f7ff93734db9bdf828c9",
+                    port: 587,
+                    ssl: false,
+                    smtp: "smtp.gmail.com",
+                    email: "danmzzu@gmail.com",
+                    password: "krqq ozuv wwth ouwy",
+                    from: '"LOO9 - Contato" <danmzzu@gmail.com>',
+                    to: "danmzzu@gmail.com",
+                    subject: subject,
+                    message: message
+                })
+            });
 
-        // Feedback com base na resposta
-        if (response.ok) {
-            feedbackElement.textContent = "Mensagem enviada com sucesso!";
-            feedbackElement.style.color = "green";
-        } else {
-            feedbackElement.textContent = `Falha: ${result.message || 'Erro desconhecido'}`;
-            feedbackElement.style.color = "red";
+            const data = await response.json();
+            console.log("Status:", data.status);
+            console.log("Message:", data.message);
+
+            if (response.ok) {
+                displayFeedback("Mensagem enviada com sucesso!", "success");
+            } else {
+                displayFeedback(`Erro: ${data.message || "Erro desconhecido."}`, "error");
+            }
+        } catch (error) {
+            console.error("Erro ao enviar o e-mail:", error);
+            displayFeedback("Falha na comunicação com o servidor.", "error");
         }
-    } catch (error) {
-        // Em caso de falha na requisição
-        console.error("Erro ao enviar email:", error);
-        feedbackElement.textContent = "Erro ao enviar a mensagem. Tente novamente mais tarde.";
-        feedbackElement.style.color = "red";
     }
 });
+
+function displayFeedback(message, type) {
+    feedbackElement.textContent = message;
+    feedbackElement.className = type;
+}
