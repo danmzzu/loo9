@@ -17,7 +17,6 @@ form.addEventListener("submit", async function(event) {
         return;
     }
 
-    // Desabilita os campos e o botão de envio
     toggleFormState(true);
     displayFeedback("Aguarde...");
 
@@ -43,7 +42,7 @@ form.addEventListener("submit", async function(event) {
 
         if (response.ok) {
             displayFeedback("Mensagem enviada com sucesso!", "success");
-            form.reset(); // Limpa o formulário
+            form.reset();
         } else {
             displayFeedback(`Erro: ${data.message || "Erro desconhecido."}`, "error");
         }
@@ -52,7 +51,6 @@ form.addEventListener("submit", async function(event) {
         displayFeedback("Falha na comunicação com o servidor.", "error");
     }
 
-    // Reabilita os campos e o botão de envio
     toggleFormState(false);
 });
 

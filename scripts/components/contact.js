@@ -11,11 +11,10 @@ form.addEventListener("submit", async function(event) {
     const message = messageField.value.trim();
 
     if (!subject || !message) {
-        displayFeedback("Todos os campos devem ser preenchidos.", "error");
+        displayFeedback("Todos os campos devem ser preenchidos.");
         return;
     }
 
-    // Desabilita os campos e o botão de envio
     toggleFormState(true);
     displayFeedback("Aguarde...");
 
@@ -40,16 +39,14 @@ form.addEventListener("submit", async function(event) {
         const data = await response.json();
 
         if (response.ok) {
-            displayFeedback("Mensagem enviada com sucesso!", "success");
-            form.reset(); // Limpa o formulário
+            displayFeedback("Mensagem enviada com sucesso!");
+            form.reset();
         } else {
-            displayFeedback(`Erro: ${data.message || "Erro desconhecido."}`, "error");
+            displayFeedback(`Erro: ${data.message || "Erro desconhecido."}`);
         }
     } catch (error) {
-        displayFeedback("Falha na comunicação com o servidor.", "error");
+        displayFeedback("Falha na comunicação com o servidor.");
     }
-
-    // Reabilita os campos e o botão de envio
     toggleFormState(false);
 });
 
