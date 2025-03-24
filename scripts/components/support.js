@@ -36,8 +36,6 @@ form.addEventListener("submit", async function(event) {
             });
 
             const data = await response.json();
-            console.log("Status:", data.status);
-            console.log("Message:", data.message);
 
             if (response.ok) {
                 displayFeedback("Mensagem enviada com sucesso!", "success");
@@ -51,7 +49,7 @@ form.addEventListener("submit", async function(event) {
     }
 });
 
-function displayFeedback(message, type) {
+function displayFeedback(message) {
+    feedbackElement.style.display = 'flex';
     feedbackElement.textContent = message;
-    feedbackElement.className = type;
 }

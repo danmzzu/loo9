@@ -10,8 +10,7 @@ form.addEventListener("submit", async function(event) {
     const message = messageField.value.trim();
 
     if (!subject || !message) {
-        console.log("Falha: Todos os campos devem ser preenchidos.");
-        displayFeedback("Todos os campos devem ser preenchidos.", "error");
+        displayFeedback("Todos os campos devem ser preenchidos.");
     } else {
         try {
             const response = await fetch("https://sendmail-production-286f.up.railway.app/", {
@@ -34,22 +33,19 @@ form.addEventListener("submit", async function(event) {
             });
 
             const data = await response.json();
-            console.log("Status:", data.status);
-            console.log("Message:", data.message);
 
             if (response.ok) {
-                displayFeedback("Mensagem enviada com sucesso!", "success");
+                displayFeedback("Mensagem enviada com sucesso!");
             } else {
-                displayFeedback(`Erro: ${data.message || "Erro desconhecido."}`, "error");
+                displayFeedback(`Erro: ${data.message || "Erro desconhecido."}`);
             }
         } catch (error) {
-            console.error("Erro ao enviar o e-mail:", error);
-            displayFeedback("Falha na comunicação com o servidor.", "error");
+            displayFeedback("Falha na comunicação com o servidor.");
         }
     }
 });
 
-function displayFeedback(message, type) {
-    feedbackElement.textContent = message;
-    feedbackElement.className = type;
+function displayFeedback(message) {
+    feedbackElement.style.display = 'flex';
+    feedbackElement.innerHTML = message;
 }
