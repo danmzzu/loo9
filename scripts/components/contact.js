@@ -1,7 +1,7 @@
 const form = document.getElementById("contact-form");
 const subjectField = document.getElementById("contact-subject");
 const messageField = document.getElementById("contact-message");
-const feedbackElement = document.getElementById("feedback");
+const feedbackElement = document.getElementById("contact-result");
 
 form.addEventListener("submit", async function(event) {
     event.preventDefault();
