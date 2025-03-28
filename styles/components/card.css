@@ -50,6 +50,7 @@
 
 .card-gap {
     height: 100%;
+    border-bottom: 1px dashed #fff;
 }
 
 @keyframes rotateBorder {
@@ -98,7 +99,8 @@
     
     .card-container h1,
     .card-container p,
-    .card-container a {
+    .card-container a,
+    .card-container > div {
         filter: blur(2px);
         opacity: 0.3;
     }
@@ -109,9 +111,14 @@
     
     .card-container:hover h1,
     .card-container:hover p,
-    .card-container:hover a {
+    .card-container:hover a,
+    .card-container:hover > div {
         transform: scale(1.02);
         filter: blur(0);
         opacity: 1;
+    }
+
+    .card-container:hover > div {
+        border-bottom: 1px dashed #ccc;
     }
 }
