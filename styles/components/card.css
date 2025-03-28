@@ -73,7 +73,7 @@
 
 @media (min-width: 768px) { 
     .card:hover {
-        transform: scale(1.25);
+        transform: scale(1.2);
         filter: blur(0);
         position: relative;
         z-index: 20;
