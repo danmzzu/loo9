@@ -50,7 +50,7 @@
 
 .card-gap {
     height: 100%;
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px dashed #333;
 }
 
 @keyframes rotateBorder {
