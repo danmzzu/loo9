@@ -69,3 +69,49 @@
 @media (max-width: 768px) {
     .card { flex: 1 1 100%; }
 }
+
+@media (min-width: 768px) { 
+    .card:hover {
+        transform: scale(1.25);
+        filter: blur(0);
+        position: relative;
+        z-index: 20;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .card-container:hover {
+        background-color: #fff;
+    }
+
+    .card-container:hover h1 {
+        color: #000 !important;
+    }
+
+    .card-container:hover p {
+        color: #000 !important;
+    }
+
+    .card-container:hover a {
+        color: #fff !important;
+        background-color: #000 !important;
+    }
+    
+    .card-container h1,
+    .card-container p,
+    .card-container a {
+        filter: blur(2px);
+        opacity: 0.3;
+    }
+
+    .card-container:hover h1 {
+        color: #000;
+    }
+    
+    .card-container:hover h1,
+    .card-container:hover p,
+    .card-container:hover a {
+        transform: scale(1.02);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
