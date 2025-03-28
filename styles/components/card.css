@@ -73,7 +73,7 @@
 
 @media (min-width: 768px) { 
     .card:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         filter: blur(0);
         position: relative;
         z-index: 20;
@@ -113,7 +113,7 @@
     .card-container:hover p,
     .card-container:hover a,
     .card-container:hover > div {
-        transform: scale(1.02);
+        transform: scale(1.01);
         filter: blur(0);
         opacity: 1;
     }
