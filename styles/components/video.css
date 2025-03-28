@@ -9,5 +9,8 @@ video {
 }
 
 @media (max-width: 768px) { 
-    video { filter: opacity(0.1) grayscale(100%) !important; }
+    video { 
+        width: 200%;
+        filter: opacity(0.1) grayscale(100%) !important; 
+    }
 }
