@@ -101,7 +101,6 @@
     .card-container p,
     .card-container a,
     .card-container > div {
-        filter: blur(2px);
         opacity: 0.3;
     }
 
